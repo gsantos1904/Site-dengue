@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-BR" data-bs-theme="auto">
+  <head>
+    <script src="../assets/js/color-modes.js"></script>
+	<link rel="stylesheet" href="custom.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+	<link rel="icon" href="../img/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Dengue</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Mais_Informações.css">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+      @media only screen and (max-width:360px){
+        *{
+          max-width: 360px;
+        }
+        article{
+          margin: 30px 0px 0px 0px;
+          max-width: 360px;
+        }
+        h1{
+          margin: 0;
+          text-align: center;
+        }
+        article h3{
+          max-width: 350px;
+          text-align: justify;
+          padding-left: 10px;
+        }
+        article ul li{
+          margin: 0;
+          padding-left: 10px;
+          max-width: 310px;
+          text-align: justify;
+        }
+        article p{
+          max-width: 310px;
+          padding-left: 10px;
+        }
+        article .p{
+          max-width: 340px;
+          padding-left: 40px;
+        }
+        article img{
+          margin: 0px 0px 0px 15px;
+          width: 280px;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                Claro
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+            </li>
+            <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                Escuro
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+            </li>
+            <li>
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+            </li>
+        </ul>
+    </div>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+            <a href="../index.html"><img src="../img/logo.png" alt="Logo" class="navbar-logo""></a>
+            <a class="navbar-brand" href="../index.html">Dengue mata !!!</a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Casos_De_Dengue.html" target="_blank">Casos de Dengue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sobre_o_Aedes_aegypti.html">Sobre o Aedes aegypti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Mais_Informações.html" target="_blank">Mais Informações</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+      <h1>Informações adicionais sobre a Dengue</h1>
+      <h3>Dengue e Gravidez:</h3>
+      <ul>
+        <li>Orientações específicas para mulheres grávidas sobre como se proteger da dengue e quais medidas tomar em caso de suspeita da doença.</li>
+        <p>Para mulheres grávidas, é crucial adotar medidas adicionais de proteção contra a dengue devido aos riscos associados à saúde materna e fetal. Recomenda-se evitar áreas de alto risco para a transmissão do vírus, como regiões com proliferação do mosquito Aedes aegypti, especialmente durante o período de maior atividade do mosquito, geralmente durante o amanhecer e o entardecer. Utilizar repelentes aprovados para gestantes é essencial, aplicando-os de acordo com as instruções do fabricante e reaplicando conforme necessário.</p>
+        <p>Vestir roupas que cubram a maior parte do corpo, especialmente durante atividades ao ar livre, também pode ajudar a reduzir o risco de picadas de mosquito. Manter portas e janelas protegidas com telas e usar mosquiteiros durante o sono são outras medidas importantes de proteção.</p>
+        <img src="img/Gravida.png" alt="Gravida">
+        <p>Em caso de suspeita de dengue, as mulheres grávidas devem procurar imediatamente assistência médica para avaliação e tratamento adequado. É fundamental informar o médico sobre a gravidez, pois pode ser necessário ajustar o tratamento para garantir a segurança tanto da mãe quanto do bebê. Recomenda-se monitorar de perto os sintomas, como febre, dores no corpo, dor de cabeça e erupções cutâneas, e informar imediatamente o médico sobre quaisquer sinais de agravamento, como sangramento ou dificuldade respiratória.</p>
+        <p>Durante a recuperação, as mulheres grávidas devem seguir as orientações médicas específicas, descansar adequadamente, manter-se bem hidratadas e evitar medicamentos não recomendados durante a gestação. Seguir estas orientações pode ajudar a proteger tanto a mãe quanto o bebê contra os riscos da dengue durante a gravidez.</p>
+        <li>Informações sobre os riscos associados à dengue durante a gravidez e suas possíveis complicações.</li>
+        <p>A dengue durante a gravidez apresenta riscos adicionais tanto para a mãe quanto para o feto. Mulheres grávidas com dengue correm maior risco de desenvolver complicações graves, como dengue hemorrágica e síndrome de choque da dengue, devido às mudanças no sistema imunológico durante a gestação. Essas complicações podem ser potencialmente fatais e exigem atenção médica imediata. Além disso, a dengue durante a gravidez pode aumentar o risco de parto prematuro, baixo peso ao nascer e outras complicações obstétricas, representando uma ameaça à saúde do feto.</p>
+        <p>Estudos também sugerem que a infecção por dengue durante a gravidez pode aumentar o risco de aborto espontâneo. Além disso, a infecção pelo vírus da dengue pode ser transmitida ao feto durante a gestação, causando complicações como malformações congênitas e deficiências no desenvolvimento. Portanto, é crucial que as mulheres grávidas adotem medidas rigorosas de prevenção contra a dengue e busquem assistência médica imediata em caso de suspeita da doença para reduzir os riscos associados à saúde materna e fetal.</p>
+        <li>Conselhos sobre o uso seguro de repelentes e outras medidas preventivas para gestantes.</li>
+        <p>Para gestantes, é fundamental adotar medidas preventivas seguras para evitar a exposição à dengue e outros mosquitos transmissores de doenças. O uso de repelentes apropriados é recomendado, mas é importante escolher produtos que sejam seguros para gestantes, como aqueles contendo DEET, picaridina ou óleo de eucalipto limão, e aplicá-los conforme as instruções do fabricante. Evitar o uso de repelentes com concentrações muito altas de DEET e limitar sua aplicação a áreas expostas da pele pode ajudar a minimizar o risco de efeitos adversos.</p>
+        <p>Além disso, vestir roupas que cubram a maior parte do corpo e usar mosquiteiros durante o sono são medidas adicionais de proteção eficazes. Manter portas e janelas protegidas com telas também ajuda a reduzir a exposição aos mosquitos. É importante evitar áreas com alta incidência de dengue, especialmente durante o período de maior atividade do mosquito, e seguir estratégias de controle de mosquitos em casa, como eliminar criadouros de água parada. Consultar um profissional de saúde antes de usar qualquer produto repelente durante a gravidez é recomendado para garantir sua segurança e eficácia. Essas medidas preventivas ajudam a proteger tanto a gestante quanto o feto contra os riscos associados à dengue durante a gravidez.</p>
+      </ul>
+      <h3>Tratamento para pessoas com sintomas da dengue:</h3>
+      <ul>
+        <li>Explicação detalhada sobre as opções de tratamento disponíveis para pessoas diagnosticadas com dengue</li>
+        <p>O tratamento da dengue, em sua maioria, é baseado no alívio dos sintomas, uma vez que não há medicamento específico para combater o vírus. Recomenda-se repouso adequado para permitir que o corpo se recupere e combata a infecção. A hidratação é fundamental, e os pacientes devem beber muitos líquidos, como água, sucos naturais e água de coco, para prevenir a desidratação, especialmente se houver febre alta e vômitos. O uso de analgésicos como paracetamol pode ajudar a reduzir a febre e aliviar dores no corpo e nas articulações. No entanto, medicamentos contendo ácido acetilsalicílico (aspirina) e anti-inflamatórios não esteroides devem ser evitados, pois podem aumentar o risco de sangramento.</p>
+        <img src="img/Tratamento.png" alt="Tratamento">
+        <p>Em casos graves de dengue, como dengue hemorrágica ou síndrome de choque da dengue, a hospitalização pode ser necessária para monitoramento cuidadoso e tratamento intravenoso de fluidos para prevenir a desidratação e choque. Transfusões de sangue também podem ser necessárias em casos de hemorragia grave. É essencial buscar atendimento médico imediato se os sintomas se agravarem, como dor abdominal intensa, vômitos persistentes, sangramento nas gengivas ou urina escura, pois podem ser sinais de complicações potencialmente fatais. Essas opções de tratamento visam aliviar os sintomas e prevenir complicações graves, garantindo uma recuperação mais rápida e segura para os pacientes diagnosticados com dengue.</p>
+        <li>Informações sobre os cuidados médicos necessários durante a recuperação da doença.</li>
+        <p>Durante a recuperação da dengue, é essencial seguir alguns cuidados médicos para garantir uma recuperação completa e evitar complicações. Primeiramente, é importante continuar o repouso adequado, permitindo que o corpo se recupere totalmente e fortaleça seu sistema imunológico. Além disso, manter-se bem hidratado é fundamental, bebendo líquidos como água, sucos naturais e água de coco para repor os fluidos perdidos durante a doença e ajudar na eliminação de toxinas do corpo. Em casos de febre persistente ou dor, o uso de medicamentos analgésicos, como paracetamol, pode ser recomendado para aliviar os sintomas. Monitorar os sinais de alerta, como sangramento anormal, dor abdominal intensa ou dificuldade para respirar, e buscar atendimento médico imediato se algum desses sintomas ocorrer, é crucial.</p>
+        <img src="img/Cuidados.png" alt="Cuidados">
+        <p>Além disso, seguir uma dieta leve e balanceada, rica em nutrientes, pode ajudar na recuperação, fornecendo ao corpo os nutrientes necessários para reconstruir tecidos danificados e fortalecer o sistema imunológico. Por fim, é importante seguir as orientações médicas específicas para cada caso, incluindo o acompanhamento regular com o profissional de saúde para monitorar a progressão da recuperação e garantir que não haja complicações. Esses cuidados médicos durante a fase de recuperação são essenciais para uma recuperação completa e para prevenir recorrências da doença.</p>
+        <li>Descrição dos sintomas de alerta que indicam a necessidade de buscar assistência médica imediata</li>
+        <p>É crucial reconhecer os sintomas de alerta da dengue, pois eles podem indicar complicações graves que exigem atenção médica imediata. Os sinais de alerta incluem dor abdominal intensa e persistente, especialmente ao redor do abdômen superior, que pode ser um indicativo de hemorragia interna. Vômitos persistentes ou frequentes podem levar à desidratação e indicar uma condição mais grave, especialmente se acompanhados de sangue. Sangramento anormal, como nas gengivas, nariz, urina ou fezes, requer avaliação médica imediata, pois pode ser um sintoma de dengue hemorrágica. Outros sintomas de alerta incluem pele pálida, sonolência excessiva, irritabilidade extrema, dificuldade para respirar, dor no peito, sensação de desmaio ou tonturas frequentes.</p>
+        <img src="img/Sintomas.png" alt="Sintomas">
+        <p>Em mulheres, sangramento vaginal fora do período menstrual também é motivo de preocupação. Se algum desses sintomas for observado, é essencial buscar atendimento médico imediatamente para avaliação e tratamento adequado. Ignorar os sintomas de alerta pode resultar em complicações sérias, como choque circulatório, falência de órgãos e até mesmo óbito, portanto, é fundamental agir rapidamente para garantir a melhor chance de recuperação.</p>
+        <li>Esclarecimento sobre a importância de repouso, hidratação e alimentação adequada durante a fase de recuperação</li>
+        <p>Durante a fase de recuperação da dengue, é fundamental dar ênfase à importância do repouso, hidratação e alimentação adequada para uma recuperação completa e rápida. O repouso é essencial para permitir que o corpo se recupere e fortaleça após a doença, reduzindo o risco de complicações e promovendo uma recuperação mais eficaz. Além disso, a hidratação adequada é crucial para repor os fluidos perdidos durante a febre e os possíveis episódios de vômito, prevenindo a desidratação e ajudando na eliminação de toxinas do organismo. Uma alimentação balanceada e nutritiva fornece os nutrientes essenciais necessários para fortalecer o sistema imunológico e auxiliar na reconstrução dos tecidos danificados durante a doença.</p>
+        <img src="img/Repouso.png" alt="Repouso">
+        <p>É importante consumir alimentos ricos em vitaminas, minerais e antioxidantes, como frutas, vegetais, proteínas magras e grãos integrais, enquanto se evita alimentos processados, ricos em açúcar e gorduras saturadas. Seguir uma dieta equilibrada e adequada às necessidades individuais durante a fase de recuperação ajuda a restaurar a energia, promove a regeneração celular e fortalece o sistema imunológico, auxiliando no retorno à saúde plena. Aconselhar os pacientes sobre a importância desses cuidados durante a fase de recuperação não apenas acelera o processo de cura, mas também reduz o risco de recorrência da doença e complicações associadas.</p>
+      </ul>
+      <h3>Dengue em Crianças:</h3>
+      <ul>
+        <li>Orientações para pais e responsáveis sobre como proteger as crianças da dengue.</li>
+        <p>Proteger as crianças da dengue requer a adoção de medidas preventivas específicas para evitar a picada do mosquito transmissor. É fundamental vestir roupas que cubram a maior parte do corpo, especialmente durante o amanhecer e o entardecer, quando os mosquitos estão mais ativos. Além disso, aplicar repelentes de insetos apropriados para crianças nas áreas expostas da pele, seguindo as instruções do fabricante, ajuda a reduzir o risco de picadas de mosquito. Manter portas e janelas protegidas com telas também é importante para evitar a entrada de mosquitos em casa. Eliminar criadouros de água parada ao redor da casa, como vasos de plantas, pneus velhos e recipientes de água, ajuda a reduzir a reprodução do mosquito transmissor.</p>
+        <img src="img/Criança_com_picada.png" alt="Picada">
+        <p>Educar as crianças sobre a importância de evitar áreas com alta incidência de mosquitos e sobre como se proteger contra picadas também é essencial. Além disso, é importante estar atento aos sintomas da dengue em crianças, como febre, dores no corpo, dor de cabeça e erupções cutâneas, e procurar assistência médica se necessário. Seguir essas orientações ajuda a proteger as crianças contra os riscos da dengue e a promover um ambiente seguro e saudável para seu desenvolvimento.</p>
+        <li>Sintomas específicos da dengue em crianças e como reconhecê-los.</li>
+        <p>Reconhecer os sintomas específicos da dengue em crianças é fundamental para buscar assistência médica oportuna e iniciar o tratamento adequado. Os sintomas mais comuns incluem febre alta, que pode durar de dois a sete dias, acompanhada de dores de cabeça intensas e dores no corpo. Além disso, as crianças com dengue podem apresentar erupções cutâneas, especialmente no tronco e nos membros, e ter sangramento leve, como manchas vermelhas na pele ou sangramento nasal.</p>
+        <p>Outros sintomas incluem dor abdominal, vômitos frequentes, fadiga extrema e fraqueza. Em casos graves de dengue, as crianças podem desenvolver sinais de alerta, como dor abdominal intensa, dificuldade para respirar, sangramento nas gengivas ou urina escura, que exigem atenção médica imediata. É importante monitorar de perto os sintomas da dengue em crianças e procurar assistência médica se eles piorarem ou persistirem, para garantir um tratamento adequado e prevenir complicações graves.</p>
+      </ul>
+      <h3>Pesquisas e Avanços Científicos:</h3>
+      <ul>
+        <li>Resumo de pesquisas recentes sobre dengue, incluindo avanços no diagnóstico, tratamento e prevenção da doença.</li>
+        <p>Pesquisas recentes sobre a dengue têm revelado avanços significativos em várias áreas, incluindo diagnóstico, tratamento e prevenção da doença. No campo do diagnóstico, novas técnicas laboratoriais têm sido desenvolvidas para detectar o vírus da dengue com maior rapidez e precisão, incluindo testes de PCR e sorologia avançada. Quanto ao tratamento, estudos têm investigado o potencial de medicamentos antivirais e terapias imunomoduladoras para reduzir a gravidade da doença e prevenir complicações. Além disso, ensaios clínicos estão em andamento para avaliar a eficácia de novas vacinas contra a dengue, com resultados promissores em termos de proteção contra múltiplos sorotipos do vírus.</p>
+        <img src="img/Laboratorio.png" alt="Laboratorio">
+        <p>Estratégias inovadoras de controle do vetor também têm sido exploradas, como o uso de mosquitos geneticamente modificados e métodos de controle biológico. Esses avanços estão contribuindo para melhorar a compreensão da dengue e desenvolver abordagens mais eficazes para prevenir e tratar a doença, oferecendo esperança para reduzir sua carga global de morbidade e mortalidade.</p>
+        <li>Destaques sobre estudos epidemiológicos, vacinas em desenvolvimento e novas estratégias de controle do mosquito transmissor.</li>
+        <p>Estudos epidemiológicos recentes têm fornecido percepções valiosas sobre a distribuição geográfica e a prevalência da dengue, destacando áreas de alto risco e padrões de transmissão sazonal. Quanto às vacinas em desenvolvimento, várias candidatas estão sendo investigadas em ensaios clínicos, incluindo vacinas baseadas em vírus vivo atenuado, subunidades virais e tecnologias de DNA recombinante, com resultados promissores em termos de segurança e eficácia. Além disso, novas estratégias de controle do mosquito transmissor estão sendo exploradas, como o uso de mosquitos geneticamente modificados para reduzir a capacidade de transmissão do vírus da dengue e a implementação de abordagens baseadas na liberação de insetos estéreis.</p>
+        <p>Outras estratégias incluem o desenvolvimento de armadilhas de mosquitos mais eficazes e o uso de agentes biológicos para reduzir a população de mosquitos. Esses avanços estão oferecendo novas esperanças na luta contra a dengue, fornecendo ferramentas mais eficazes para prevenir a transmissão do vírus e proteger as comunidades em todo o mundo.</p>
+      </ul>
+      <h3>Informações governamentais de combate à dengue e campanhas de conscientização:</h3>
+      <p class="p">Os programas governamentais de combate à dengue desempenham um papel crucial na prevenção e controle da propagação da doença. Esses programas geralmente incluem uma variedade de estratégias, desde a eliminação de criadouros do mosquito transmissor até campanhas de conscientização pública. Os governos frequentemente implementam medidas de vigilância epidemiológica para monitorar a incidência de dengue e identificar áreas de alto risco. Além disso, investimentos são feitos em infraestrutura para melhorar as condições de saneamento básico e fornecer acesso a serviços de saúde adequados para diagnóstico e tratamento da doença.</p>
+      <p class="p">Os programas governamentais também colaboram frequentemente com organizações não governamentais, instituições de pesquisa e outros parceiros para desenvolver e implementar estratégias eficazes de controle da dengue. Isso pode incluir a realização de campanhas de fumigação em áreas de surto, distribuição gratuita de inseticidas domésticos e incentivos para a participação da comunidade no combate ao vetor.</p>
+      <p class="p">Em muitos países, os programas governamentais de combate à dengue e as campanhas de conscientização são parte integrante das políticas de saúde pública e recebem recursos financeiros substanciais para garantir sua eficácia. No entanto, é importante que esses programas sejam avaliados regularmente para garantir que estejam alcançando seus objetivos e que sejam adaptados às mudanças nas condições epidemiológicas e socioeconômicas. A colaboração entre governo, sociedade civil e setor privado é essencial para enfrentar efetivamente o desafio da dengue e proteger a saúde da população.</p>
+    </article>
+    <footer class="container">
+        <p class="float-end"><a href="#">Voltar ao Topo</a></p>
+        <p>&copy; Projeto Uninove Turma 24.</p>
+    </footer>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

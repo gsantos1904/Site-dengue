@@ -1,0 +1,30 @@
+.container-fluid{
+	margin: auto ;
+}
+
+.navbar {
+    justify-content: center ;
+}
+
+.navbar-collapse {
+    justify-content: center ;
+}
+
+.navbar-nav {
+    margin: auto ;
+}
+
+.nav-item:hover {
+    font-family: "Jersey 10", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	
+}
+
+.btn btn-primary rounded-pill px-3{
+	
+	background-color:red;
+}
+
+
+

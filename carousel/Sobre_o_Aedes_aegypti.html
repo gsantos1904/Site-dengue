@@ -1,0 +1,198 @@
+f<!doctype html>
+<html lang="pt-BR" data-bs-theme="auto">
+  <head>
+    <script src="../assets/js/color-modes.js"></script>
+	<link rel="stylesheet" href="custom.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+	<link rel="icon" href="../img/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Dengue</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Sobre_o_Aedes_aegypti.css">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+      .bd-mode-toggle .dropdown-menu .active .bi {
+        display: block !important;
+      }
+      @media only screen and (max-width:360px){
+        *{
+          max-width: 360px;
+        }
+        article{
+          margin: 30px 0px 0px 0px;
+          max-width: 360px;
+        }
+        .mosquito{
+          margin: 0;
+          text-align: center;
+        }
+        article h3{
+          text-align: justify;
+          max-width: 340px;
+        }
+        article p{
+          max-width: 340px;
+        }
+        article img{
+          margin: 0px 0px 0px 30px;
+          width: 300px;
+        }
+        article iframe{
+          margin: 0px 0px 0px 10px;
+          width: 340px;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+                Claro
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+            </li>
+            <li>
+            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+                Escuro
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+            </li>
+            <li>
+            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+                Auto
+                <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+            </button>
+            </li>
+        </ul>
+    </div>
+    <header data-bs-theme="dark">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+            <a href="../index.html"><img src="../img/logo.png" alt="Logo" class="navbar-logo""></a>
+            <a class="navbar-brand" href="../index.html">Dengue mata !!!</a>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Casos_De_Dengue.html" target="_blank">Casos de Dengue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Sobre_o_Aedes_aegypti.html">Sobre o Aedes aegypti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Mais_Informações.html" target="_blank">Mais Informações</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+      <h1 class="mosquito">Mosquito Aedes Egypti</h1>
+      <h3>Descrição do mosquito Aedes aegypti:</h3>
+      <p>O Aedes aegypti é um mosquito pequeno, com cerca de 7 milímetros de comprimento, de cor escura e listrado. Ele é reconhecido por suas características físicas distintas, incluindo o padrão de listras brancas e pretas em suas pernas e corpo. O mosquito fêmea é responsável pela transmissão de doenças como dengue, zika e chikungunya, enquanto o macho se alimenta exclusivamente de néctar de plantas. O Aedes aegypti é uma espécie urbana e prefere habitar áreas próximas a habitações humanas, onde encontra condições ideais para se reproduzir e se alimentar de sangue humano.</p>
+      <img src="img/Mosquito.png" alt="Mosquito" width="350px">
+      <p>Imagens e diagramas detalhados são essenciais para ajudar na identificação do Aedes aegypti e compreensão de sua anatomia. As fotografias podem destacar as características físicas distintas do mosquito, como suas listras pretas e brancas e seu formato corporal característico. Diagramas anatômicos podem fornecer uma visão mais detalhada das diferentes partes do corpo do mosquito, incluindo cabeça, tórax, abdômen, asas e pernas. Essas representações visuais são úteis para educar o público sobre como identificar o mosquito transmissor de doenças e tomar medidas preventivas adequadas.</p>
+      <h3>Informações sobre os hábitos de reprodução do Aedes aegypti e como evitar a proliferação:</h3>
+      <p>O Aedes aegypti possui hábitos preferenciais de reprodução em locais com água limpa e parada, onde pode depositar seus ovos em recipientes como pneus descartados, vasos de plantas, recipientes de água não utilizados e até mesmo em pequenas poças de água da chuva acumulada. Esses locais fornecem um ambiente ideal para o desenvolvimento das larvas do mosquito, que emergem rapidamente após o contato com a água. Uma única fêmea do Aedes aegypti pode depositar centenas de ovos de uma vez, aumentando significativamente o potencial de infestação em uma área. Para evitar a proliferação do mosquito, é essencial eliminar ou modificar esses criadouros potenciais, esvaziando e limpando regularmente recipientes que possam acumular água e mantendo-os devidamente fechados ou virados para baixo. Além disso, medidas como a instalação de telas em janelas e portas e o uso de mosquiteiros em camas podem ajudar a reduzir a exposição ao mosquito e prevenir picadas.</p><br>
+      <img src="img/Agua_parada.png" alt="Agua_parada" width="350px">
+      <p>A participação ativa da comunidade é fundamental para o sucesso das iniciativas de controle do Aedes aegypti, e campanhas de sensibilização e educação devem ser realizadas regularmente para promover o engajamento e a adoção de práticas preventivas. Em áreas onde a infestação pelo mosquito é especialmente alta, programas de controle integrado, que combinam medidas de controle larvário e adulticida, podem ser implementados para reduzir a população de mosquitos e interromper o ciclo de transmissão de doenças. É importante ressaltar que a prevenção da dengue e outras doenças transmitidas pelo Aedes aegypti é uma responsabilidade compartilhada por todos, e cada indivíduo pode desempenhar um papel significativo na proteção da saúde pública ao adotar medidas simples, como a eliminação de criadouros do mosquito em sua própria casa e na comunidade.</p>
+      <h3>Explicação sobre como o mosquito transmite doenças como dengue, zika e chikungunya:</h3>
+      <p>O Aedes aegypti transmite várias doenças virais, incluindo dengue, zika e chikungunya. Quando o mosquito fêmea pica uma pessoa infectada com um desses vírus, ele ingere o vírus junto com o sangue da pessoa. Dentro do corpo do mosquito, o vírus se replica e se multiplica rapidamente, infectando as células do inseto. Após um período de incubação dentro do mosquito, que geralmente varia de alguns dias a uma semana, o vírus se espalha para as glândulas salivares do mosquito, onde fica pronto para ser transmitido a uma nova pessoa. Quando o mosquito pica uma pessoa saudável para se alimentar de sangue, ele injeta sua saliva, que contém o vírus, no sistema circulatório da pessoa, infectando-a. Uma vez dentro do corpo humano, o vírus se replica e pode causar uma variedade de sintomas, dependendo do tipo de vírus e da resposta imunológica do hospedeiro. Por exemplo, o vírus da dengue pode causar sintomas como febre alta, dores de cabeça intensas, dores musculares e articulares, além de complicações graves, como hemorragias e choque.</p><br>
+      <p>O vírus da zika, por sua vez, está associado a sintomas como febre baixa, erupções cutâneas, dores nas articulações e, em casos raros, complicações neurológicas, como a síndrome de Guillain-Barré em adultos e microcefalia em bebês nascidos de mães infectadas durante a gravidez. Já o vírus da chikungunya pode causar sintomas semelhantes aos da dengue, incluindo febre alta, dores articulares intensas e erupções cutâneas, que podem persistir por semanas ou meses após a infecção. A transmissão dessas doenças por mosquitos como o Aedes aegypti pode ocorrer durante todo o ano em áreas onde o mosquito é endêmico, e a prevenção da picada de mosquito é fundamental para reduzir o risco de infecção. Medidas de controle do vetor, como eliminação de criadouros e uso de repelentes, são essenciais para prevenir a propagação dessas doenças e proteger a saúde pública.</p>
+      <h3>Medidas de controle do mosquito, como o uso de inseticidas e a eliminação de água parada:</h3>
+      <p>O controle do mosquito Aedes aegypti é fundamental para reduzir a propagação de doenças como dengue, zika e chikungunya. Uma das principais medidas de controle é a eliminação de criadouros potenciais onde o mosquito possa depositar seus ovos e as larvas possam se desenvolver. Isso envolve inspecionar regularmente áreas ao redor de residências, escolas e locais de trabalho para identificar e remover recipientes que possam acumular água parada, como vasos de plantas, pneus velhos, garrafas plásticas e caixas d'água descobertas. Além da eliminação de criadouros, o controle do mosquito também pode envolver o uso de inseticidas para matar larvas e adultos do mosquito. Larvicidas são produtos químicos aplicados em água estagnada para matar as larvas do mosquito antes que elas se desenvolvam em adultos. Já os adulticidas são produtos aplicados em áreas externas para matar os mosquitos adultos que estão voando. No entanto, o uso de inseticidas deve ser feito com cuidado e de acordo com as recomendações das autoridades de saúde, para evitar impactos negativos na saúde humana e no meio ambiente.</p><br>
+      <img src="img/Combate_ao_mosquito.png" alt="Combate_Mosquito" width="350px">
+      <p>Além das medidas de controle do vetor, a proteção individual contra picadas de mosquito também é importante para reduzir o risco de infecção por doenças transmitidas por mosquitos. Isso inclui o uso de repelentes de insetos, vestir roupas que cubram a maior parte do corpo e instalar telas em janelas e portas para impedir a entrada de mosquitos em ambientes internos. A conscientização pública sobre as medidas de controle do mosquito e a importância da participação ativa da comunidade são fundamentais para o sucesso das iniciativas de combate à dengue e outras doenças transmitidas pelo Aedes aegypti. Campanhas de educação e sensibilização devem ser realizadas regularmente para informar a população sobre como prevenir a proliferação do mosquito e proteger sua saúde e a de suas famílias. Em resumo, a eliminação de criadouros, o uso adequado de inseticidas e a proteção individual são componentes essenciais de um programa abrangente de controle do mosquito, que visa reduzir a incidência de doenças transmitidas por mosquitos e promover a saúde pública.</p>
+      <h3>Vídeos mostrando o ciclo de vida do Aedes aegypti e métodos de controle:</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rFFfntijlME?si=FQIHSAdns-UjliAJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="margin-top: 20px;"></iframe>
+    </article>
+    <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+    <footer class="container">
+        <p class="float-end"><a href="#">Voltar ao Topo</a></p>
+        <p>&copy; Projeto Uninove Turma 24.</p>
+    </footer>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

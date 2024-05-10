@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin: 40px 0px 20px 20px;
+}
+.div{
+    border-bottom: 4px solid gray;
+    margin: 0px 20px 0px 20px;
+}
+section{
+    margin: 50px;
+    padding: 0px 0px 0px 100px;
+}
